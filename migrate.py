@@ -89,8 +89,7 @@ def main():
 
     db_url = input('Enter DB URL (leave blank for default local): ').strip()
     if not db_url:
-        print('❌ DB URL cannot be empty')
-        return
+        db_url = 'postgresql://animalia_dev_user:dev_password_123@localhost:5433/animalia_dev'
 
     # -------------------------------------------------------------- clients
 
